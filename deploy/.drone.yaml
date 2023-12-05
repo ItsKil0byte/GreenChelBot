@@ -53,6 +53,7 @@ steps:
     commands:
       - cd GreenChelBotInfra
       - git checkout master
+      - git config --global --add url."git@github.com:".insteadOf "https://github.com/"
       - git config user.email "drone@deeplerg.dev"
       - git config user.name "Drone"
       - git add .
